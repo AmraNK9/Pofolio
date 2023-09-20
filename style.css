@@ -7,11 +7,24 @@
 body{
     background-color: #000;
 }
+
 .sideNav{
     position: fixed;
     height: 100vh;
     width: 100px;
     background-color: #222;
+    transition: .5s;
+}
+.fa-bars{
+  position: fixed;
+ margin-left: 100px;
+  transition: .5s;
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 20px;
+  height: auto;
+  /* background-color: #000; */
+  z-index: 999;
 }
 a{
     padding: 5px 5px;
@@ -36,7 +49,10 @@ img.icon{
 }
 .active{
     background-color: #000;
-    transition: 1s;
+    transition: .5s;
+}
+#home{
+  margin-right: 10px;
 }
 .container{
     margin-left: 130px;
@@ -97,19 +113,25 @@ background-color: rgb(117,117,117);
     margin:20px 0;
 }
 #about{
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .spaceBetweenRow{
+  flex-wrap: wrap;
     margin-top: 20px;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     height: fit-content;
     background-color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     position: relative;
 
+}
+@media (max-width:785px){
+  .spaceBetweenRow{
+    justify-content: center;
+  }
 }
 .container3{
     width: 20%;height: 100%;
@@ -162,6 +184,7 @@ background-color: rgb(117,117,117);
   /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
+    transition: .5s;
   }
   h2{
     color: #fff;
@@ -228,4 +251,68 @@ background-color: rgb(117,117,117);
   }
   #btn2:hover{
     color: black;
+  }
+
+
+
+  .project-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+  
+  .project-card h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #fff;
+  }
+  
+  .project-card p {
+    margin-top: 10px;
+    color: #757575;
+  }
+  
+  .btn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+
+  @media (max-width: 600px){
+    .sideNav{
+      margin-left: -100px;
+
+    }
+    .container{
+      margin-left: 20px;
+    }
+    .fa-bars{
+      margin-left: 10px;
+    }
+    .card{
+      margin-top: 16px;
+
+      width: 100%;
+    }
+  }
+  .rotate{
+    transform: rotate(90deg);
   }
