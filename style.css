@@ -92,9 +92,17 @@ img.icon{
     width: fit-content;
     background-color: #000;
 }
-a:hover  {
-    transform:translate3d(10px,10px,10px);
+a:hover img.icon{
+    transform:scale(1.2)
 }
+
+a.active{
+  transition: .5s;
+}
+/* a.active:hover{
+  background-color: #222;
+
+} */
 .iconText{
     transition: 0.5s;
 }
@@ -107,6 +115,7 @@ background-color: rgb(117,117,117);
 
 .prograss{
     height: 10px;
+    width: 0%;
     background-color: aliceblue;
 }
 .paragraph{
@@ -114,6 +123,10 @@ background-color: rgb(117,117,117);
 }
 #about{
     margin-right: 10px;
+}
+.contact-input{
+  padding:0px 10px;
+  width: 93%;
 }
 .spaceBetweenRow{
   flex-wrap: wrap;
@@ -123,16 +136,16 @@ background-color: rgb(117,117,117);
     height: fit-content;
     background-color: #fff;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     position: relative;
 
 }
-@media (max-width:785px){
+/* @media (max-width:785px){
   .spaceBetweenRow{
     justify-content: center;
   }
-}
+} */
 .container3{
     width: 20%;height: 100%;
     display: flex;
@@ -302,7 +315,7 @@ background-color: rgb(117,117,117);
 
     }
     .container{
-      margin-left: 20px;
+      margin-left: 30px;
     }
     .fa-bars{
       margin-left: 10px;
@@ -316,3 +329,100 @@ background-color: rgb(117,117,117);
   .rotate{
     transform: rotate(90deg);
   }
+  .contact>img{
+    margin-left: 10px;
+  }
+  .typing-animation{
+    animation: typing 1s steps(28, end), blink-caret 0.7s step-end infinite;
+
+  }
+
+  /* @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  } */
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #333;
+    }
+  }
+  
+  #loader{
+    z-index: 9999;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+    height: 100vh;
+  }
+  .loader {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  
+  .loader-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-top: 3px solid white;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+ 
+  .prograss{
+    /* width : 0%; */
+    transition-delay: 1s;
+    transition: 1s;
+    transition-timing-function: ease-out;
+  }
+  
+.w-10{
+  width: 10%;
+}
+.w-20{
+  width: 20%;
+}
+.w-30{
+  width: 30%;
+}
+.w-40{
+  width: 40%;
+}
+.w-50{
+  width: 50%;
+}
+.w-60{
+  width: 60%;
+}
+.w-70{
+  width: 70%;
+}
+.w-80{
+  width: 80%;
+}
+.w-90{
+  width: 90%;
+}
+.w-100{
+  width: 100%;
+}

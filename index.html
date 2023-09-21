@@ -21,6 +21,12 @@
 		/>
 	</head>
 	<body>
+		<div id="loader">
+			<div class="loader">
+				<div class="loader-inner"></div>
+			</div>
+		</div>
+
 		<div class="sideNav">
 			<div class="sideNavImgWrapper">
 				<img
@@ -52,7 +58,7 @@
 				<p class="iconText">About</p>
 			</a>
 			<a
-				href="#Photo"
+				href="#projects"
 				class="navButton"
 			>
 				<img
@@ -77,8 +83,8 @@
 		<i class="fa-solid fa-bars"></i>
 		<div class="container">
 			<div id="home">
-				<h3 class="header">I'm Nay Myo Thant.</h3>
-				<p class="subHeader">Full Stack Web Developer</p>
+				<h3 class="header typing-animation"></h3>
+				<p class="subHeader typing-animation"></p>
 				<div class="imageWrapper">
 					<img
 						src="https://www.w3schools.com/w3images/man_smoke.jpg"
@@ -93,8 +99,9 @@
 				id="about"
 				style="margin-top: 20px"
 			>
-				<div class="paragraph">
+				<div class="paragraph paragraph-header">
 					<h1
+						class="typing-animation"
 						style="
 							font-size: 30px;
 							color: rgb(241, 242, 241);
@@ -113,6 +120,7 @@
 						"
 					></div>
 					<p
+						class="typing-animation paragraph"
 						style="
 							font-size: 15px;
 							color: rgb(117, 117, 117);
@@ -128,7 +136,9 @@
 						and excellence in the digital realm.
 					</p>
 				</div>
+				<br />
 				<h1
+					class="skills"
 					style="
 						font-size: 24px;
 						color: rgb(241, 242, 241);
@@ -149,10 +159,7 @@
 					Html
 				</p>
 				<div class="prograssBar">
-					<div
-						class="prograss"
-						style="width: 65%"
-					></div>
+					<div class="prograss html"></div>
 				</div>
 				<p
 					style="
@@ -165,10 +172,7 @@
 					Css
 				</p>
 				<div class="prograssBar">
-					<div
-						class="prograss"
-						style="width: 90%"
-					></div>
+					<div class="prograss css"></div>
 				</div>
 				<p
 					style="
@@ -181,10 +185,7 @@
 					Js
 				</p>
 				<div class="prograssBar">
-					<div
-						class="prograss"
-						style="width: 80%"
-					></div>
+					<div class="prograss js"></div>
 				</div>
 				<p
 					style="
@@ -194,13 +195,10 @@
 						margin: 10px 0;
 					"
 				>
-					C#
+					Vue
 				</p>
 				<div class="prograssBar">
-					<div
-						class="prograss"
-						style="width: 60%"
-					></div>
+					<div class="prograss vue"></div>
 				</div>
 				<p
 					style="
@@ -213,11 +211,36 @@
 					Php
 				</p>
 				<div class="prograssBar">
-					<div
-						class="prograss"
-						style="width: 90%"
-					></div>
+					<div class="prograss php"></div>
 				</div>
+				<p
+					style="
+						font-size: 15px;
+						font-family: Montserrat, sans-serif;
+						color: rgb(117, 117, 117);
+						margin: 10px 0;
+					"
+				>
+					Laravel
+				</p>
+				<div class="prograssBar">
+					<div class="prograss laravel"></div>
+				</div>
+				<p
+					style="
+						font-size: 15px;
+						font-family: Montserrat, sans-serif;
+						color: rgb(117, 117, 117);
+						margin: 10px 0;
+					"
+				>
+					C#
+				</p>
+				<div class="prograssBar">
+					<div class="prograss c-sharp"></div>
+				</div>
+
+				<br />
 				<div class="spaceBetweenRow">
 					<div class="container3">
 						<p style="display: block; text-align: center">3+</p>
@@ -247,7 +270,10 @@
 				>
 					Download Resume
 				</button>
+				<br />
+				<br />
 				<h1
+					id="projects"
 					style="
 						font-size: 24px;
 						margin-top: 20px;
@@ -256,7 +282,7 @@
 						font-family: Montserrat, sans-serif;
 					"
 				>
-					Team Projects
+					Projects
 				</h1>
 				<div
 					class="spaceBetweenRow"
@@ -267,8 +293,8 @@
 							src="img/Mandalar Second.png"
 							alt="Project 1"
 						/>
-						<h3>Neon Book Reviews</h3>
-						<p>Social Media Platforms for Book Lovers</p>
+						<h3>Mandalar Second</h3>
+						<p>Customer to Customer Shoping</p>
 						<a
 							href="project1.html"
 							class="btn"
@@ -288,7 +314,21 @@
 							>Learn More</a
 						>
 					</div>
+					<div class="project-card">
+						<img
+							src="img/Hmi.png"
+							alt="Project 1"
+						/>
+						<h3>HOST Myanmar Institute</h3>
+						<p>Pofolio</p>
+						<a
+							href="https://rococo-llama-822cf8.netlify.app/"
+							class="btn"
+							>Learn More</a
+						>
+					</div>
 				</div>
+				<br />
 				<h1
 					style="
 						font-size: 24px;
@@ -317,20 +357,20 @@
 							height: 100%;
 							display: flex;
 							flex-direction: column;
-							justify-content: space-around;
+							justify-content: start;
 							margin-top: 6px;
 							margin-left: 10px;
 						"
 					>
 						<p
-							style="display: block; font-size: 18px; color: rgb(117, 117, 117)"
+							style="display: block; font-size: 18px; color: rgb(255, 255, 255)"
 						>
 							Nay Myo Thant
 						</p>
 						<p
-							style="display: block; font-size: 18px; color: rgb(117, 117, 117)"
+							style="display: block; font-size: 18px; color: rgb(122, 122, 122)"
 						>
-							<!-- John Doe saved us from a web disaster. -->
+							naymyo1310mdy@gmail.com
 						</p>
 					</div>
 				</div>
@@ -357,14 +397,14 @@
 						"
 					>
 						<p
-							style="display: block; font-size: 18px; color: rgb(117, 117, 117)"
+							style="display: block; font-size: 18px; color: rgb(255, 255, 255)"
 						>
 							Thwin Htoo Nang
 						</p>
 						<p
 							style="display: block; font-size: 18px; color: rgb(117, 117, 117)"
 						>
-							<!-- No one is better than John Doe. . -->
+							thwinhtoo118@gmail.com
 						</p>
 					</div>
 				</div>
@@ -391,7 +431,7 @@
 						"
 					>
 						<p
-							style="display: block; font-size: 18px; color: rgb(117, 117, 117)"
+							style="display: block; font-size: 18px; color: rgb(255, 255, 255)"
 						>
 							Sai Htoo Naung
 						</p>
@@ -399,12 +439,13 @@
 							style="display: block; font-size: 18px; color: rgb(117, 117, 117)"
 						>
 							<!-- No one is better than John Doe. . -->
+							saipaing177@gmail.com
 						</p>
 					</div>
 				</div>
-				<br />
+				<!-- <br /> -->
 				<!-- Solo Projects -->
-				<h2>Personal Projects</h2>
+				<!-- <h2>Personal Projects</h2>
 				<div class="line"></div>
 				<div
 					class="spaceBetweenRow"
@@ -462,8 +503,8 @@
 							alt=""
 						/>
 					</div>
-				</div>
-				<br />
+				</div> -->
+				<!-- <br /> -->
 				<h2>Content Me</h2>
 				<div
 					class="line"
@@ -506,18 +547,22 @@
 				Let's get in touch. Send me a message:
 
 				<input
+					class="contact-input"
 					type="text"
 					placeholder="Name"
 				/>
 				<input
+					class="contact-input"
 					type="text"
 					placeholder="Email"
 				/>
 				<input
+					class="contact-input"
 					type="text"
 					placeholder="Subject"
 				/>
 				<input
+					class="contact-input"
 					type="text"
 					placeholder="Message"
 				/>
@@ -533,7 +578,15 @@
 				</button>
 			</p>
 
-			<div style="display: block; text-align: center">
+			<div
+				class="
+			
+			
+			
+			
+			"
+				style="display: block; text-align: center"
+			>
 				<img
 					src="icon/email.svg"
 					alt=""
@@ -556,9 +609,13 @@
 					margin-top: 10px;
 				"
 			>
-				Made By Nay Myo Thant/AmaraNk
+				I am Free For Nanprofit Organization
 			</p>
 		</div>
+		<script
+			type="module"
+			src="src/typingAnimationHeader.js"
+		></script>
 
 		<script src="app.js"></script>
 	</body>
