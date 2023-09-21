@@ -20,7 +20,7 @@ function typeText(element, text, charIndex, charDelay, callback) {
 }
 
 function startTyping() {
-  typeText(header,"I'am Nay Myo Thant", 0, 100, function () {
+  typeText(header,"I'm Nay Myo Thant", 0, 100, function () {
     // Callback to start typing subHeader after header is typed
     typeText(subHeader,"Freelance Web Developer", 0, 50, null);
   });

@@ -2,6 +2,7 @@ import "./components/typingAnimation.js";
 import "https://unpkg.com/scrollreveal";
 import "./components/loader.js";
 import { timeout } from "./components/loader.js";
+import { animateNumber } from "./components/numberAnimation.js";
 //config
 var configForReset = true;
 var configForViewOffset = {
@@ -51,13 +52,26 @@ document.addEventListener("DOMContentLoaded", () => {
 			ScrollReveal().reveal(".skills", {
 				viewOffset: configForViewOffset,
 				reset: configForReset,
-				afterReveal: removeClass,
+				afterReset: removeClass,
 			});
 		
 			ScrollReveal().reveal(".skills", {
 				viewOffset: configForViewOffset,
 				reset: configForReset,
 				afterReveal: AddClass,
+			});
+			ScrollReveal().reveal("#project", {
+				viewOffset: configForViewOffset,
+				reset: configForReset,
+				afterReset:()=>{
+					document.querySelector("#project").innerHTML = "0"
+				} ,
+			});
+		
+			ScrollReveal().reveal("#project", {
+				viewOffset: configForViewOffset,
+				reset: configForReset,
+				afterReveal: AnimateAll
 			});
 		},timeout
 	)
@@ -86,3 +100,12 @@ function removeClass() {
 	document.querySelector(".vue").classList.remove("w-60");
 	document.querySelector(".laravel").classList.remove("w-50");
 }
+
+function AnimateAll(){
+	animateNumber("project",18,1000);
+	animateNumber("meeting",33,1000);
+	animateNumber("pataners",20,1000);
+
+
+}
+
