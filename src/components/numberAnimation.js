@@ -1,6 +1,6 @@
 function animateNumber(elementId, number, speed) {
     let element = document.getElementById(elementId);
-    element.innerHTML = '';
+    element.innerHTML = '0';
   
     function typeNumber(i) {
         if (i <= number) {
