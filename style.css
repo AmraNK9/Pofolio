@@ -3,6 +3,7 @@
     padding: 0;
     user-select: none;
     font-family: Montserrat, sans-serif;
+    overflow: hidden;
 }
 body{
     background-color: #000;
@@ -393,7 +394,7 @@ background-color: rgb(117,117,117);
     /* width : 0%; */
     /* transition-delay: 1s; */
     transition: 1s;
-    transition-timing-function: ease-out;
+    transition-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);
   }
   
 .w-10{
