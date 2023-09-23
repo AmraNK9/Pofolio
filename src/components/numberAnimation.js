@@ -7,7 +7,7 @@ function animateNumber(elementId, number, speed) {
             element.innerHTML = i + "+";
             i++;
                 for(let z=0;z<=speed;z++){
-                    console.log(z)  
+                    console.clear()
                     if(z == speed){
                         
                         requestAnimationFrame(() => typeNumber(i));

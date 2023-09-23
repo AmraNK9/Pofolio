@@ -6,6 +6,7 @@
 }
 body{
     background-color: #000;
+    max-height: 1000px;
 }
 
 .sideNav{
@@ -126,7 +127,8 @@ background-color: rgb(117,117,117);
 }
 .contact-input{
   padding:0px 10px;
-  width: 93%;
+  width: 80%;
+  margin: 20 30px;
 }
 .spaceBetweenRow{
   overflow: hidden;
@@ -208,7 +210,7 @@ background-color: rgb(117,117,117);
     margin-bottom: 10px;
   }
   .line{
-    width: 300px;
+    width: 100%;
     height: 1px;
     background-color: #757575;
   }
@@ -244,7 +246,7 @@ background-color: rgb(117,117,117);
   }  */
   .contentP{
     color: #757575;
-    font-size: 17px;
+    font-size: small;
     margin: 15px 0;
   }
   .icon1{
@@ -259,7 +261,7 @@ background-color: rgb(117,117,117);
     outline: none;
   }
   #btn2{
-    width: 200px;
+    width: 50%;
     height: 40px;
     color: #757575;
   }
@@ -267,6 +269,9 @@ background-color: rgb(117,117,117);
     color: black;
   }
 
+  .container3 p{
+    font-size: small;
+  }
 
 
   .project-card {

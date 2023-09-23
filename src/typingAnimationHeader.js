@@ -4,7 +4,7 @@ import "./components/loader.js";
 import { timeout } from "./components/loader.js";
 import { animateNumber } from "./components/numberAnimation.js";
 //config
-var configForReset = true;
+var configForReset = false;
 var configForViewOffset = {
 	top: 0,
 	right: 0,
@@ -47,7 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			ScrollReveal().reveal(projectCard[1], slideRight);
 			ScrollReveal().reveal(projectCard[2], slideUp);
 		
-			ScrollReveal().reveal(".paragraph", slideUp);
+			ScrollReveal().reveal(".paragraph", {reset:true,origin:"bottom",	distance: "50%"}
+			);
 		
 			ScrollReveal().reveal(".skills", {
 				viewOffset: configForViewOffset,
@@ -70,8 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		
 			ScrollReveal().reveal("#project", {
 				viewOffset: configForViewOffset,
-				reset: configForReset,
-				afterReveal: AnimateAll
+				reset: true,
+				afterReveal: ()=>{
+					AnimateAll(200)
+				}
 			});
 		},timeout
 	)
@@ -101,10 +104,10 @@ function removeClass() {
 	document.querySelector(".laravel").classList.remove("w-50");
 }
 
-function AnimateAll(){
-	animateNumber("project",18,1000);
-	animateNumber("meeting",33,1000);
-	animateNumber("pataners",20,1000);
+function AnimateAll(speed){
+	animateNumber("project",18,speed);
+	animateNumber("meeting",33,speed);
+	animateNumber("pataners",20,speed);
 
 
 }
